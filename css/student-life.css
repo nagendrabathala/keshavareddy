@@ -1,0 +1,37 @@
+.onboard {
+    background: url("../assets/images/lightcolorbg.png") 100% 0 no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    padding: 78px;
+   
+}
+.underline{
+    text-decoration: underline;
+}
+.image{
+    width: 100%;
+    height: 70%;
+}
+.imgwidth{
+    width: inherit;
+}
+.navbar-right{
+    float: right;
+}
+.alignment{
+    padding: 126px 330px;
+}
+.imgalign{
+    width: inherit;
+}
+.imgborder{
+    border: 2px solid white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
