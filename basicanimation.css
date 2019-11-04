@@ -1,0 +1,43 @@
+.parent {
+    width: 400px; 
+    height: 300px;
+  }
+  
+  .child {
+    width: 337%;
+    height: 150%;
+    background-color: black; /* fallback color */
+    background-image: url("beautifulplace.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+  transition: all .5s;
+}
+.child::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.75);
+  }
+  
+  .parent:hover .child:before,
+  .parent:focus .child:before {
+    display: block;
+  }
+  span {
+    color: white; /* Good thing we set a fallback color! */
+    font-family: sans-serif;
+    padding: 25%;
+    position: absolute;
+  }
+  .parent:hover span,
+.parent:focus span {
+  display: block;
+}
